@@ -1,6 +1,15 @@
-<h1>Get Pumped!!</h1>
+<h1>#Title</h1>
 <% @posts.each do |post| %>
-	<%= post.author %><br />
-<% end %>
 
+<%= image_tag post.image %><br />
+<div class="content">
+<%= post.content %><br />
+<%= post.author %><br />
+</div>
+<%= link_to 'Edit', edit_post_path(post) %>
+<%= button_to 'Delete', post_path(post), :method => :delete,
+																 :confirm => 'Are you sure?',
+																 :title => 'Question' %>
+<% end %>
+<%= will_paginate %>
 <%= link_to "New Quote", new_post_path %>

@@ -1,0 +1,46 @@
+body {
+	background-color: #aaaaaa;
+}
+
+.container {
+	margin: 0 auto;
+	padding: 0;
+	text-align: center;
+	width: 800px;
+}
+
+.content {
+	background-color: #ffffff;
+	border: 1px solid black;
+	padding: 1em;
+	width: 300px;
+	margin: 0 auto;
+	-moz-border-radius:		10px;
+	-webkit-border-radius:	10px;
+	border-radius:					10px;
+}
+
+.listing h1 {
+	color: #ffffff
+}
+
+.footer {
+	height: 25px;
+	width: 100%;
+	margin-top: 200px;
+}
+
+.footer a {
+	color: #444444;
+}
+
+.footer ul {
+	list-style: none
+	margin: 0;
+	padding: 0;
+}
+
+.footer li {
+	display: inline;
+	padding: 1em;
+}

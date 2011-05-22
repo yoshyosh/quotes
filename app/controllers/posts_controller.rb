@@ -1,7 +1,9 @@
 class PostsController < ApplicationController
 	
 	def index
-		@posts = Post.all
+		@posts = Post.paginate			:page => params[:page],
+														:per_page => 1
+														
 		
 		respond_to do |format|
 			format.html
@@ -43,5 +45,42 @@ class PostsController < ApplicationController
 			format.xml { render :xml => @post }
 		end
 	end
+	
+	def edit
+		@post = Post.find(params[:id])
+		
+		respond_to do |format|
+			format.html #edit.html.erb
+			format.xml { render :xml => @post }
+		end
+	end
+	
+	def update
+		@post = Post.find(params[:id])
+		
+		respond_to do |format|
+			if @post.update_attributes(params[:post])
+				format.html { redirect_to(@post,
+										:notice => 'Post was successfully updated.') }
+				format.xml { head :ok }
+			else
+				format.html { render :action => "edit" }
+				format.xml  { render :xml => @post.errors,
+										:status => :unprocessable_entity }
+			end
+		end
+	end
+	
+	def destroy
+		@post = Post.find(params[:id])
+		@post.destroy
+		
+		respond_to do |format|
+			format.html { redirect_to(posts_url) }
+			format.xml { head :ok }
+		end
+	end
+	
+		
 	
 end

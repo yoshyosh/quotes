@@ -3,6 +3,7 @@ Quotes::Application.routes.draw do
 
   get "pages/about"
 	resources :posts
+	
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
