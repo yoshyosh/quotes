@@ -1,0 +1,6 @@
+<h1>Get Pumped!!</h1>
+<% @posts.each do |post| %>
+	<%= post.author %><br />
+<% end %>
+
+<%= link_to "New Quote", new_post_path %>
