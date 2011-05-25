@@ -2,5 +2,7 @@
 	<%= render @posts%>
 </div>
 
-<%= will_paginate(@posts, :renderer => PaginationListLinkRenderer) %>
+<%= will_paginate(@posts, :renderer => PaginationListLinkRenderer, :page_links => false) %>
+<% if admin? %>
 <%= link_to "New Quote", new_post_path %>
+<% end %>

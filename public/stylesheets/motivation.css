@@ -15,6 +15,10 @@ header h1 {
 	font-size: 3.5em;
 }
 
+a {
+	color: #000;
+}
+
 .container {
 	margin: 0 auto;
 	padding: 0;
@@ -70,6 +74,37 @@ section div.content #quote {
 	padding: 20px;
 	margin-top: 30px;
 }
+
+/* pagination css */
+
+.pagination li {
+	display: inline;
+}
+
+.pagination li a {
+	color: #eee;
+	font-size: 3em;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.pagination li a:hover {
+	color: #aaa;
+	text-decoration: underline;
+}
+
+.pagination .previous_page {
+	margin-right: 50px;
+}
+
+.pagination {
+	list-style:none;
+	padding: 0;
+	margin: 0;
+}
+
+
+/* footer css */
 
 footer {
 	height: 25px;
