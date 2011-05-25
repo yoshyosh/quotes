@@ -1,0 +1,20 @@
+<%= image_tag (post.image, :class => "portrait") %><br />
+			<div class="content">
+				<div id="leftquote">
+					<%= image_tag("left_quote.png") %>
+				</div>
+				<div id="rightquote">
+					<%= image_tag("right_quote.png") %>
+				</div>
+					<div id="quote">
+						<%= post.content %>
+					</div>
+			</div>
+		<div class="content_foot">
+			<%= post.author %><br />
+			<span>IMG Source: <%= post.source %></span>
+		</div>
+			<%= link_to 'Edit', edit_post_path(post) %>
+		<%= button_to 'Delete', post_path(post), :method => :delete,
+																		 :confirm => 'Are you sure?',
+																		 :title => 'Question' %>

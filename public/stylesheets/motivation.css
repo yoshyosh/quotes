@@ -1,5 +1,18 @@
 body {
-	background-color: #aaaaaa;
+	background-color: #000;
+	margin: 0;
+	padding: 0;
+}
+
+header {
+	color: #ffffff;
+	text-align: center;
+	margin-top: 50px;
+	margin-bottom: 30px;
+}
+
+header h1 {
+	font-size: 3.5em;
 }
 
 .container {
@@ -9,38 +22,78 @@ body {
 	width: 800px;
 }
 
+section #img_content {
+	background-color: #171717;
+	min-height: 500px;
+	height: auto !important;
+	-moz-border-radius:		10px;
+	-webkit-border-radius:	10px;
+	border-radius:					10px;
+	width: 500px;
+	margin: 0 auto;
+}
+
 .content {
 	background-color: #ffffff;
 	border: 1px solid black;
 	padding: 1em;
-	width: 300px;
+	min-height: 35px;
+	height: auto !important;
+	width: 420px;
 	margin: 0 auto;
+	border: 1px solid white;
 	-moz-border-radius:		10px;
 	-webkit-border-radius:	10px;
 	border-radius:					10px;
+	margin-top: 15px;
 }
 
-.listing h1 {
-	color: #ffffff
+.portrait {
+	margin-top: 20px;
 }
 
-.footer {
+section div.content #leftquote {
+	float: left;
+}
+
+section div.content #rightquote {
+	float: right;
+}
+
+section div.content #quote {
+	font-size: 1em;
+}
+
+#img_content div.content_foot {
+	color: #595959;
+	text-align: left;
+	padding: 20px;
+	margin-top: 30px;
+}
+
+footer {
 	height: 25px;
 	width: 100%;
-	margin-top: 200px;
+	margin-top: 50px;
 }
 
-.footer a {
-	color: #444444;
-}
-
-.footer ul {
+footer ul {
 	list-style: none
 	margin: 0;
 	padding: 0;
 }
 
-.footer li {
+footer li {
 	display: inline;
 	padding: 1em;
+}
+
+footer li a{
+	color: #444;
+	text-decoration: none;
+}
+
+footer li a:hover {
+	color: #d5d5d5;
+	text-decoration: underline;
 }

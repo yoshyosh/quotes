@@ -7,13 +7,15 @@
   <%= csrf_meta_tag %>
 </head>
 <body>
-	<div class="container">
-		<header>
-		</header>
-			<section class="listing">
+	<header>
+	<h1>#HardWork</h1>
+	<p>Motivate A Friend</p>
+	</header>
+		<div class="container">
+			<section>
 				<%= yield %>
 			</section>
-		<footer class="footer">
+		<footer>
 			<nav>
 				<ul>
 					<li><%= link_to 'Home', root_path %></li>
