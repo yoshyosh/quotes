@@ -2,5 +2,5 @@
 	<%= render @posts%>
 </div>
 
-<%= will_paginate(@posts) %>
+<%= will_paginate(@posts, :renderer => PaginationListLinkRenderer) %>
 <%= link_to "New Quote", new_post_path %>
