@@ -132,3 +132,9 @@ footer li a:hover {
 	color: #d5d5d5;
 	text-decoration: underline;
 }
+
+/* admin page */
+
+.adminpage {
+	color: #fff;
+}

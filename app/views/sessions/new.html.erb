@@ -1,0 +1,10 @@
+<div class="adminpage">
+	<p>
+	<%= form_for(:session, :url => sessions_path) do |f| %>
+	<div class="field">
+		<%= f.label :password %><br />
+		<%= f.text_field :password %>
+	</div>
+	</p>
+	<% end %>
+</div>
